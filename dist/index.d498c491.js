@@ -27159,36 +27159,36 @@ var _newContainer = require("./components/NewContainer");
 var _trendingContainer = require("./components/TrendingContainer");
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
-        className: " px-4  sm:px-14 pt-6 pb-6 ",
+        className: " px-4  sm:px-14 pt-6 pb-6 overflow-hidden ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _header.Header), {}, void 0, false, {
                 fileName: "src/app.jsx",
                 lineNumber: 11,
-                columnNumber: 9
+                columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "sm:flex pt-6 sm:gap-8  mb-12",
+                className: "sm:flex pt-4 sm:gap-8 h-auto overflow-hidden mb-12",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mainArticle.MainArticle), {}, void 0, false, {
                         fileName: "src/app.jsx",
-                        lineNumber: 15,
-                        columnNumber: 13
+                        lineNumber: 13,
+                        columnNumber: 21
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newContainer.NewContainer), {}, void 0, false, {
                         fileName: "src/app.jsx",
-                        lineNumber: 16,
-                        columnNumber: 13
+                        lineNumber: 14,
+                        columnNumber: 21
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/app.jsx",
-                lineNumber: 14,
-                columnNumber: 9
+                lineNumber: 12,
+                columnNumber: 17
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _trendingContainer.TrendingContainer), {}, void 0, false, {
                 fileName: "src/app.jsx",
-                lineNumber: 20,
-                columnNumber: 9
+                lineNumber: 16,
+                columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
@@ -27460,10 +27460,54 @@ $RefreshReg$(_c, "Navbar");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../assets/images/icon-menu.svg":"6P5bc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/images/icon-menu-close.svg":"8fnP1","react":"21dqq","classnames":"jocGM"}],"6P5bc":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","classnames":"jocGM","../assets/images/icon-menu.svg":"6P5bc","../assets/images/icon-menu-close.svg":"8fnP1","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jocGM":[function(require,module,exports) {
+/*!
+	Copyright (c) 2018 Jed Watson.
+	Licensed under the MIT License (MIT), see
+	http://jedwatson.github.io/classnames
+*/ /* global define */ (function() {
+    "use strict";
+    var hasOwn = {}.hasOwnProperty;
+    var nativeCodeString = "[native code]";
+    function classNames() {
+        var classes = [];
+        for(var i = 0; i < arguments.length; i++){
+            var arg = arguments[i];
+            if (!arg) continue;
+            var argType = typeof arg;
+            if (argType === "string" || argType === "number") classes.push(arg);
+            else if (Array.isArray(arg)) {
+                if (arg.length) {
+                    var inner = classNames.apply(null, arg);
+                    if (inner) classes.push(inner);
+                }
+            } else if (argType === "object") {
+                if (arg.toString !== Object.prototype.toString && !arg.toString.toString().includes("[native code]")) {
+                    classes.push(arg.toString());
+                    continue;
+                }
+                for(var key in arg)if (hasOwn.call(arg, key) && arg[key]) classes.push(key);
+            }
+        }
+        return classes.join(" ");
+    }
+    if (0, module.exports) {
+        classNames.default = classNames;
+        module.exports = classNames;
+    } else if (typeof define === "function" && typeof define.amd === "object" && define.amd) // register as 'classnames', consistent with npm package name
+    define("classnames", [], function() {
+        return classNames;
+    });
+    else window.classNames = classNames;
+})();
+
+},{}],"6P5bc":[function(require,module,exports) {
 module.exports = require("25484395a51a6b32").getBundleURL("avzPb") + "icon-menu.1cb7b930.svg" + "?" + Date.now();
 
-},{"25484395a51a6b32":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+},{"25484395a51a6b32":"lgJ39"}],"8fnP1":[function(require,module,exports) {
+module.exports = require("ff2d24319e3d2b44").getBundleURL("avzPb") + "icon-menu-close.d632f3ad.svg" + "?" + Date.now();
+
+},{"ff2d24319e3d2b44":"lgJ39"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27631,51 +27675,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"8fnP1":[function(require,module,exports) {
-module.exports = require("ff2d24319e3d2b44").getBundleURL("avzPb") + "icon-menu-close.d632f3ad.svg" + "?" + Date.now();
-
-},{"ff2d24319e3d2b44":"lgJ39"}],"jocGM":[function(require,module,exports) {
-/*!
-	Copyright (c) 2018 Jed Watson.
-	Licensed under the MIT License (MIT), see
-	http://jedwatson.github.io/classnames
-*/ /* global define */ (function() {
-    "use strict";
-    var hasOwn = {}.hasOwnProperty;
-    var nativeCodeString = "[native code]";
-    function classNames() {
-        var classes = [];
-        for(var i = 0; i < arguments.length; i++){
-            var arg = arguments[i];
-            if (!arg) continue;
-            var argType = typeof arg;
-            if (argType === "string" || argType === "number") classes.push(arg);
-            else if (Array.isArray(arg)) {
-                if (arg.length) {
-                    var inner = classNames.apply(null, arg);
-                    if (inner) classes.push(inner);
-                }
-            } else if (argType === "object") {
-                if (arg.toString !== Object.prototype.toString && !arg.toString.toString().includes("[native code]")) {
-                    classes.push(arg.toString());
-                    continue;
-                }
-                for(var key in arg)if (hasOwn.call(arg, key) && arg[key]) classes.push(key);
-            }
-        }
-        return classes.join(" ");
-    }
-    if (0, module.exports) {
-        classNames.default = classNames;
-        module.exports = classNames;
-    } else if (typeof define === "function" && typeof define.amd === "object" && define.amd) // register as 'classnames', consistent with npm package name
-    define("classnames", [], function() {
-        return classNames;
-    });
-    else window.classNames = classNames;
-})();
-
-},{}],"cmFMo":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"cmFMo":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0641 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27693,7 +27693,7 @@ var _imageWeb3DesktopJpgDefault = parcelHelpers.interopDefault(_imageWeb3Desktop
 var _article = require("./Article");
 const MainArticle = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "mb-12 sm:mb-0",
+        className: "mb-12 sm:mb-0 overflow-hidden",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("picture", {
                 children: [
@@ -27702,30 +27702,30 @@ const MainArticle = ()=>{
                         srcSet: (0, _imageWeb3MobileJpgDefault.default)
                     }, void 0, false, {
                         fileName: "src/components/MainArticle.jsx",
-                        lineNumber: 19,
-                        columnNumber: 13
+                        lineNumber: 13,
+                        columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
                         media: "(min-width:641px)",
                         srcSet: (0, _imageWeb3DesktopJpgDefault.default)
                     }, void 0, false, {
                         fileName: "src/components/MainArticle.jsx",
-                        lineNumber: 20,
-                        columnNumber: 13
+                        lineNumber: 14,
+                        columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         src: (0, _imageWeb3MobileJpgDefault.default),
                         alt: "articulo principal "
                     }, void 0, false, {
                         fileName: "src/components/MainArticle.jsx",
-                        lineNumber: 21,
-                        columnNumber: 13
+                        lineNumber: 15,
+                        columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/MainArticle.jsx",
-                lineNumber: 18,
-                columnNumber: 9
+                lineNumber: 12,
+                columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "sm:flex",
@@ -27739,15 +27739,15 @@ const MainArticle = ()=>{
                                 children: "The Bright Future of Web 3.0?"
                             }, void 0, false, {
                                 fileName: "src/components/MainArticle.jsx",
-                                lineNumber: 27,
-                                columnNumber: 39
+                                lineNumber: 21,
+                                columnNumber: 47
                             }, undefined),
                             " "
                         ]
                     }, void 0, true, {
                         fileName: "src/components/MainArticle.jsx",
-                        lineNumber: 27,
-                        columnNumber: 9
+                        lineNumber: 21,
+                        columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "flex-1  pt-9",
@@ -27758,33 +27758,33 @@ const MainArticle = ()=>{
                                 children: " We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?"
                             }, void 0, false, {
                                 fileName: "src/components/MainArticle.jsx",
-                                lineNumber: 29,
-                                columnNumber: 40
+                                lineNumber: 23,
+                                columnNumber: 48
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 className: " bg-SoftRed  w-[157px] h-[40px] uppercase  text-OffWhite  hover:bg-VerydarkBlue ",
                                 children: "Read more"
                             }, void 0, false, {
                                 fileName: "src/components/MainArticle.jsx",
-                                lineNumber: 32,
-                                columnNumber: 9
+                                lineNumber: 26,
+                                columnNumber: 17
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/MainArticle.jsx",
-                        lineNumber: 29,
-                        columnNumber: 9
+                        lineNumber: 23,
+                        columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/MainArticle.jsx",
-                lineNumber: 25,
-                columnNumber: 9
+                lineNumber: 19,
+                columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/MainArticle.jsx",
-        lineNumber: 16,
+        lineNumber: 10,
         columnNumber: 9
     }, undefined);
 };
@@ -27819,10 +27819,10 @@ const NewArticle = ({ data })=>{
         data
     });
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
-        className: "h-[130px] border-b-2 border-GrayishBlue py-7 last:border-none ",
+        className: "h-[170px] lg:h-[130px] border-b-2 border-GrayishBlue pt-4 last:border-none ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                className: " text-OffWhite  font-bold text-[20px] hover:text-SoftOrange cursor-pointer mb-3",
+                className: " text-OffWhite  font-bold text-[20px] hover:text-SoftOrange cursor-pointer ",
                 children: data.title
             }, void 0, false, {
                 fileName: "src/components/Article.jsx",
@@ -27864,31 +27864,31 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "NewContainer", ()=>NewContainer);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _articles = require("../data/articles");
+var _articlesJs = require("../data/articles.js");
 var _article = require("./Article");
 const NewContainer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("aside", {
-        className: "bg-VerydarkBlue text-OffWhite py-[28px] px-[20px]",
+        className: "bg-VerydarkBlue text-OffWhite lg:w-[800px] h-auto py-[8px] px-[20px]",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 className: "font-bold text-SoftOrange text-[40px] ",
                 children: "New"
             }, void 0, false, {
                 fileName: "src/components/NewContainer.jsx",
-                lineNumber: 11,
-                columnNumber: 9
+                lineNumber: 7,
+                columnNumber: 13
             }, undefined),
-            (0, _articles.data).map((el)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _article.NewArticle), {
+            (0, _articlesJs.Articles).map((el)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _article.NewArticle), {
                     data: el
                 }, void 0, false, {
                     fileName: "src/components/NewContainer.jsx",
-                    lineNumber: 15,
-                    columnNumber: 26
+                    lineNumber: 8,
+                    columnNumber: 34
                 }, undefined))
         ]
     }, void 0, true, {
         fileName: "src/components/NewContainer.jsx",
-        lineNumber: 8,
+        lineNumber: 6,
         columnNumber: 9
     }, undefined);
 };
@@ -27901,11 +27901,11 @@ $RefreshReg$(_c, "NewContainer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../data/articles":"4tSb6","./Article":"rEDCB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4tSb6":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../data/articles.js":"4tSb6","./Article":"rEDCB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4tSb6":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "data", ()=>data);
-const data = [
+parcelHelpers.export(exports, "Articles", ()=>Articles);
+const Articles = [
     {
         title: "Hydrogen VS Electric Cars",
         description: "Will hydrogen-fueled cars ever catch up to EVs?"
@@ -27932,11 +27932,11 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "TrendingContainer", ()=>TrendingContainer);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _trendingArticle = require("./TrendingArticle");
-var _top = require("../data/top");
+var _topJs = require("../data/top.js");
 const TrendingContainer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: " flex  sm:justify-between sm:flex-row  flex-wrap flex-col py-5 gap-10 ",
-        children: (0, _top.top).map((el)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _trendingArticle.TrendingArticle), {
+        className: " flex  sm:justify-between sm:flex-row  flex-col  gap-1 ",
+        children: (0, _topJs.Top).map((el)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _trendingArticle.TrendingArticle), {
                 data: el
             }, void 0, false, {
                 fileName: "src/components/TrendingContainer.jsx",
@@ -27958,7 +27958,7 @@ $RefreshReg$(_c, "TrendingContainer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./TrendingArticle":"b1FYY","../data/top":"38SLT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"b1FYY":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./TrendingArticle":"b1FYY","../data/top.js":"38SLT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"b1FYY":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8f44 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27971,11 +27971,11 @@ parcelHelpers.export(exports, "TrendingArticle", ()=>TrendingArticle);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const TrendingArticle = ({ data })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
-        className: "w-[350px] flex  ",
+        className: "w-[260px] h-[120px] flex   ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    className: "w-[200px] h-[150px]",
+                    className: "w-[90px] h-[120px]",
                     src: data.img
                 }, void 0, false, {
                     fileName: "src/components/TrendingArticle.jsx",
@@ -27988,33 +27988,41 @@ const TrendingArticle = ({ data })=>{
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: " pl-5 ",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        className: "font-bold text-GrayishBlue text-[30px]",
-                        children: data.id
-                    }, void 0, false, {
-                        fileName: "src/components/TrendingArticle.jsx",
-                        lineNumber: 13,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        className: "font-bold text-VerydarkBlue",
-                        children: data.title
-                    }, void 0, false, {
-                        fileName: "src/components/TrendingArticle.jsx",
-                        lineNumber: 14,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: data.description
-                    }, void 0, false, {
-                        fileName: "src/components/TrendingArticle.jsx",
-                        lineNumber: 16,
-                        columnNumber: 13
-                    }, undefined)
-                ]
-            }, void 0, true, {
+                className: "w-auto h-[120px] pl-5",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "w-full h-full bg-red-400",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                            className: "font-bold text-GrayishBlue text-[30px]",
+                            children: data.id
+                        }, void 0, false, {
+                            fileName: "src/components/TrendingArticle.jsx",
+                            lineNumber: 14,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                            className: "font-bold text-VerydarkBlue  text-[15px] ",
+                            children: data.title
+                        }, void 0, false, {
+                            fileName: "src/components/TrendingArticle.jsx",
+                            lineNumber: 15,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "text-[13px]  py-2 ",
+                            children: data.description
+                        }, void 0, false, {
+                            fileName: "src/components/TrendingArticle.jsx",
+                            lineNumber: 16,
+                            columnNumber: 17
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/TrendingArticle.jsx",
+                    lineNumber: 13,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
                 fileName: "src/components/TrendingArticle.jsx",
                 lineNumber: 12,
                 columnNumber: 9
@@ -28038,14 +28046,14 @@ $RefreshReg$(_c, "TrendingArticle");
 },{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"38SLT":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "top", ()=>top);
+parcelHelpers.export(exports, "Top", ()=>Top);
 var _imageGamingGrowthJpg = require("../assets/images/image-gaming-growth.jpg");
 var _imageGamingGrowthJpgDefault = parcelHelpers.interopDefault(_imageGamingGrowthJpg);
 var _imageRetroPcsJpg = require("../assets/images/image-retro-pcs.jpg");
 var _imageRetroPcsJpgDefault = parcelHelpers.interopDefault(_imageRetroPcsJpg);
 var _imageTopLaptopsJpg = require("../assets/images/image-top-laptops.jpg");
 var _imageTopLaptopsJpgDefault = parcelHelpers.interopDefault(_imageTopLaptopsJpg);
-const top = [
+const Top = [
     {
         id: "01",
         title: "Reviving Retro PCs",
@@ -28066,7 +28074,7 @@ const top = [
     }
 ];
 
-},{"../assets/images/image-gaming-growth.jpg":"hNOcS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../assets/images/image-retro-pcs.jpg":"9ewEp","../assets/images/image-top-laptops.jpg":"fwTXt"}],"hNOcS":[function(require,module,exports) {
+},{"../assets/images/image-gaming-growth.jpg":"hNOcS","../assets/images/image-retro-pcs.jpg":"9ewEp","../assets/images/image-top-laptops.jpg":"fwTXt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hNOcS":[function(require,module,exports) {
 module.exports = require("f7fdc5866f3a5a7e").getBundleURL("avzPb") + "image-gaming-growth.0d2dd034.jpg" + "?" + Date.now();
 
 },{"f7fdc5866f3a5a7e":"lgJ39"}],"9ewEp":[function(require,module,exports) {

@@ -6,7 +6,7 @@ import top from '../assets/images/image-top-laptops.jpg'
 
 
 
-export const top = [
+export const Top = [
 
     {id:"01",
     title:"Reviving Retro PCs",

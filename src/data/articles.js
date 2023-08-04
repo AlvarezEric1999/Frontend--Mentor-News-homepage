@@ -1,6 +1,6 @@
 
 
- export  const data  = [
+  export const Articles  = [
 {
 title: "Hydrogen VS Electric Cars",
 description:"Will hydrogen-fueled cars ever catch up to EVs?",
@@ -19,3 +19,4 @@ description:"Private funding by VC firms is down 50% YOY. We take a look at what
 
 
 ]
+
