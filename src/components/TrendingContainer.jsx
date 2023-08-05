@@ -6,7 +6,7 @@ export const  TrendingContainer = () => {
 
 
     return(
-        <section className=" flex  sm:justify-between sm:flex-row  flex-col  gap-1 ">
+        <section className=" flex  sm:justify-between sm:flex-row  flex-col  gap-8 ">
         
 
         {

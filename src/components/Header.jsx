@@ -7,7 +7,7 @@ import { Navbar } from './Navbar'
   return(
 
 
-    <header  className=' flex place-content-between items-center overflow-hidden '>
+    <header  className='  flex place-content-between items-center overflow-hidden '>
     
     <img src={logo}></img>
 

@@ -27222,7 +27222,7 @@ var _logoSvgDefault = parcelHelpers.interopDefault(_logoSvg);
 var _navbar = require("./Navbar");
 const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-        className: " flex place-content-between items-center overflow-hidden ",
+        className: "  flex place-content-between items-center overflow-hidden ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 src: (0, _logoSvgDefault.default)
@@ -27311,22 +27311,22 @@ var _react = require("react");
 var _s = $RefreshSig$();
 const Navbar = ()=>{
     _s();
-    const [active, setActive] = (0, _react.useState)(true);
-    const menu = (0, _classnamesDefault.default)("absolute", "sm:static", "w-[255px]", "z-20", "flex", "flex-col", "justify-center", "items-start", "bg-OffWhite", "right-0", " top-0", "bottom-0 ", "sm:flex", "sm:flex-row", "sm:text-[16px]", "font-inter", "sm:w-[438px]", "sm:place-content-around", "sm:items-center", {
-        "right-[-255px]": active,
-        "right-0": !active
-    });
-    const handleToggle = ()=>{
+    const [active, setActive] = (0, _react.useState)(false);
+    const menu = (0, _classnamesDefault.default)();
+    const handleToggle = (e)=>{
+        e.preventDefault();
         setActive(!active);
         console.log(active);
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                className: menu,
+                className: `absolute sm:static w-[255px] z-10  flex  flex-col justify-center items-start bg-OffWhite right-0 top-0 bottom-0 sm:flex', 
+    sm:flex-row sm:text-[16px] font-inter sm:w-[438px] sm:place-content-around sm:items-center  transition ease-in-out duration-1000 ${active ? "" : " hidden"} `,
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         className: "hover:text-SoftOrange pl-4 pb-4 ",
+                        onClick: handleToggle,
                         children: [
                             " ",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27334,18 +27334,19 @@ const Navbar = ()=>{
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.jsx",
-                                lineNumber: 34,
-                                columnNumber: 56
+                                lineNumber: 26,
+                                columnNumber: 84
                             }, undefined),
                             " "
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Navbar.jsx",
-                        lineNumber: 34,
-                        columnNumber: 5
+                        lineNumber: 26,
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         className: "hover:text-SoftOrange pl-4 pb-4 ",
+                        onClick: handleToggle,
                         children: [
                             " ",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27353,18 +27354,19 @@ const Navbar = ()=>{
                                 children: "New"
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.jsx",
-                                lineNumber: 35,
-                                columnNumber: 56
+                                lineNumber: 27,
+                                columnNumber: 85
                             }, undefined),
                             " "
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Navbar.jsx",
-                        lineNumber: 35,
-                        columnNumber: 5
+                        lineNumber: 27,
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         className: "hover:text-SoftOrange pl-4 pb-4 ",
+                        onClick: handleToggle,
                         children: [
                             " ",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27372,17 +27374,18 @@ const Navbar = ()=>{
                                 children: "Popular"
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.jsx",
-                                lineNumber: 36,
-                                columnNumber: 56
+                                lineNumber: 28,
+                                columnNumber: 85
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Navbar.jsx",
-                        lineNumber: 36,
-                        columnNumber: 5
+                        lineNumber: 28,
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         className: "hover:text-SoftOrange pl-4 pb-4 ",
+                        onClick: handleToggle,
                         children: [
                             " ",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27390,17 +27393,18 @@ const Navbar = ()=>{
                                 children: "Trending"
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.jsx",
-                                lineNumber: 37,
-                                columnNumber: 56
+                                lineNumber: 29,
+                                columnNumber: 85
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Navbar.jsx",
-                        lineNumber: 37,
-                        columnNumber: 5
+                        lineNumber: 29,
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         className: "hover:text-SoftOrange pl-4 pb-4 ",
+                        onClick: handleToggle,
                         children: [
                             " ",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27408,14 +27412,14 @@ const Navbar = ()=>{
                                 children: "Categories"
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.jsx",
-                                lineNumber: 38,
-                                columnNumber: 56
+                                lineNumber: 30,
+                                columnNumber: 85
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Navbar.jsx",
-                        lineNumber: 38,
-                        columnNumber: 5
+                        lineNumber: 30,
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         className: "absolute top-0 right-0 pt-8 pr-4 sm:hidden cursor-pointer",
@@ -27424,19 +27428,19 @@ const Navbar = ()=>{
                             src: (0, _iconMenuCloseSvgDefault.default)
                         }, void 0, false, {
                             fileName: "src/components/Navbar.jsx",
-                            lineNumber: 40,
-                            columnNumber: 103
+                            lineNumber: 31,
+                            columnNumber: 107
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Navbar.jsx",
-                        lineNumber: 40,
-                        columnNumber: 5
+                        lineNumber: 31,
+                        columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Navbar.jsx",
-                lineNumber: 33,
-                columnNumber: 1
+                lineNumber: 23,
+                columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: " w-10 h-4  cursor-pointer sm:hidden ",
@@ -27444,13 +27448,13 @@ const Navbar = ()=>{
                 src: (0, _iconMenuSvgDefault.default)
             }, void 0, false, {
                 fileName: "src/components/Navbar.jsx",
-                lineNumber: 44,
-                columnNumber: 1
+                lineNumber: 33,
+                columnNumber: 9
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Navbar, "0lYOHggGMn3lHzGuYGBtwt/XY4g=");
+_s(Navbar, "FlmmwPyItH+xqpK7o6aTjP68XkY=");
 _c = Navbar;
 var _c;
 $RefreshReg$(_c, "Navbar");
@@ -27935,7 +27939,7 @@ var _trendingArticle = require("./TrendingArticle");
 var _topJs = require("../data/top.js");
 const TrendingContainer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: " flex  sm:justify-between sm:flex-row  flex-col  gap-1 ",
+        className: " flex  sm:justify-between sm:flex-row  flex-col  gap-8 ",
         children: (0, _topJs.Top).map((el)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _trendingArticle.TrendingArticle), {
                 data: el
             }, void 0, false, {
@@ -27971,11 +27975,11 @@ parcelHelpers.export(exports, "TrendingArticle", ()=>TrendingArticle);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const TrendingArticle = ({ data })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
-        className: "w-[260px] h-[120px] flex   ",
+        className: "w-full h-[120px] flex   ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    className: "w-[90px] h-[120px]",
+                    className: "w-[130px] h-[120px]",
                     src: data.img
                 }, void 0, false, {
                     fileName: "src/components/TrendingArticle.jsx",
@@ -27988,9 +27992,9 @@ const TrendingArticle = ({ data })=>{
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "w-auto h-[120px] pl-5",
+                className: "w-full h-[120px] pl-5 flex-1",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "w-full h-full bg-red-400",
+                    className: "w-full h-full ",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                             className: "font-bold text-GrayishBlue text-[30px]",
@@ -28009,7 +28013,7 @@ const TrendingArticle = ({ data })=>{
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: "text-[13px]  py-2 ",
+                            className: "text-[13px]  pt-2 ",
                             children: data.description
                         }, void 0, false, {
                             fileName: "src/components/TrendingArticle.jsx",
